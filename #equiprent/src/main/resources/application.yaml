@@ -1,7 +1,7 @@
 spring:
   application:
     name: equiprent
-  datasorce:
+  datasource:
     url: jdbc:postgresql://localhost:5432/equiprent
     username: equiprent
     password: equiprent
