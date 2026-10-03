@@ -8,7 +8,9 @@ public record EquipmentResponse(
     Long id,
     String title,
     BigDecimal dailyRate,
-    EquipmentStatus status
+    EquipmentStatus status,
+    String categoryName,
+    String serialNumber
 ) {
 
 }

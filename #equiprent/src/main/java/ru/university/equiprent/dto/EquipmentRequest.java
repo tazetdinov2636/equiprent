@@ -11,7 +11,12 @@ public record EquipmentRequest(
     @NotNull(message = "dailyRate cannnot be Null or Empty")  
     @DecimalMin(value = "0.01", 
     message = "dailyRate cannot be lower then 0")
-    BigDecimal dailyRate
+    BigDecimal dailyRate,
+
+    @NotNull (message = "categoryId cannot be Null or Empty")
+    Long categoryId,
+
+    String serialNumber
 ) {
 
 }
