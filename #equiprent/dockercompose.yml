@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: equiprent
+      POSTGRES_USER: equiprent
+      POSTGRES_PASSWORD: equiprent
+    ports:
+      - "5432:5432"

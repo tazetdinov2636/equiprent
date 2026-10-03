@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: equiprent
+  datasorce:
+    url: jdbc:postgresql://localhost:5432/equiprent
+    username: equiprent
+    password: equiprent
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  server:
+    port: 8081
