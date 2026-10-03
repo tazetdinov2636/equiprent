@@ -11,6 +11,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import ru.university.equiprent.model.EquipmentCategory;
 import ru.university.equiprent.service.EquipmentCategoryService;
+import org.springframework.web.bind.annotation.PostMapping;
+
 
 @RequiredArgsConstructor
 @RestController
@@ -23,7 +25,7 @@ public class EquipmentCategoryController {
     public List<EquipmentCategory> getAll() {
         return service.findAll();
     }
-
+    @PostMapping
     public EquipmentCategory create(@RequestBody EquipmentCategory request) {
         return service.create(request);
     }
